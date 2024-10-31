@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pizzería</title>
+    <script src= "main.js"></script>
+
+</head>
+<body>
+    <button onclick="cargarDatosPizzeria(event)">Recargar Información</button>
+    <form onsubmit="procesarPedido(event)">
+        <h1>Pizzería DAW</h1>
+        <h2>Datos de contacto:</h2>
+        <label for="fname">Nombre y apellidos:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <span class="error"></span><br>
+        
+        <label for="fdir">Dirección: </label><br>
+        <input type="text" id="fdir" name="fdir"><br>
+        <span class="error"></span><br>
+        
+        <label for="ftel">Teléfono de contacto: </label><br>
+        <input type="tel" id="ftel" name="ftel"><br>
+        <span class="error"></span><br>
+        
+        <label for="femail">Email: </label><br>
+        <input type="email" id="femail" name="femail"><br>
+        <span class="error"></span><br>
+        
+        <h2>Tamaño de la pizza:</h2>
+        <select id="tamanos-pizza"></select>
+        
+        <h2>Ingredientes a añadir:</h2>
+        <div id="contenedor-ingredientes">
+        </div>
+
+        <h2>Finalizar pedido</h2>
+        
+        <input type="submit" id="btnSubmit" value="Confirmar Pedido">
+        
+        <div id = "contenedorFinal"></div>
+        
+        </form>
+    
+</body>
+</html>
